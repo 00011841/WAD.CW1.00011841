@@ -63,7 +63,7 @@ namespace WAD.CW1._11841.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
-        public IActionResult UpdatePokemon(int TeacherId,
+        public IActionResult UpdateTeacher(int TeacherId,
             [FromBody] TeacherDto updateTeacher)
         {
             if (updateTeacher == null)

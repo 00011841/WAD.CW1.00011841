@@ -67,7 +67,7 @@ namespace WAD.CW1._11841.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
-        public IActionResult UpdatePokemon(int StudentId, [FromQuery] int TeacherId,
+        public IActionResult UpdateStudent(int StudentId, [FromQuery] int TeacherId,
             [FromBody] StudentDto updateStudent)
         {
             if (updateStudent == null)
@@ -97,7 +97,7 @@ namespace WAD.CW1._11841.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
-        public IActionResult DeletePokemon(int StudentId)
+        public IActionResult DeleteStudent(int StudentId)
         {
             if (!_StudentRepo.IsExist(StudentId))
             {
